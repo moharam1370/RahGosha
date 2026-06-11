@@ -1,25 +1,114 @@
-@media(max-width:900px){
-  .topbar{padding:7px 20px}
-  .topbar-phones{gap:14px}
-  nav,footer{padding-right:20px;padding-left:20px}
-  .nav-links{display:none}
-  .hero{grid-template-columns:1fr;height:auto;min-height:auto}
-  .hero-visual{display:none}
-  .hero-content{padding:36px 24px}
-  .hero-stats{gap:20px}
-  .slideshow-section,.services-section,.branches-section,
-  .why-section,.process-section,.testi-section,.cta-section{
-    padding:48px 20px;
+/* ==============================
+   TABLET  (max 1024px)
+   ============================== */
+@media (max-width: 1024px) {
+  .services-section {
+    padding-left: 48px !important;
+    padding-right: 48px !important;
   }
-  .services-grid,.testi-grid{grid-template-columns:1fr}
-  .branches-grid{grid-template-columns:1fr 1fr}
-  .why-grid{grid-template-columns:1fr}
-  .process-grid{grid-template-columns:1fr 1fr;gap:28px}
-  .process-grid::before{display:none}
-  .cta-section{grid-template-columns:1fr}
-  .cta-right{align-items:flex-start}
-  .footer-grid{grid-template-columns:1fr 1fr}
-  .float-socials{grid-template-columns:repeat(5,1fr)}
-  .float-call{padding:9px 14px;font-size:.75rem}
-  .float-btn{width:40px;height:40px}
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* ==============================
+   MOBILE  (max 900px)
+   ============================== */
+@media (max-width: 900px) {
+
+  /* ── topbar ── */
+  .topbar { padding: 7px 16px; }
+  .topbar-phones { gap: 10px; flex-wrap: wrap; }
+
+  /* ── nav ── */
+  nav { padding: 0 16px; }
+  .nav-links { display: none; }
+
+  /* ── hero ── */
+  .hero { grid-template-columns: 1fr; height: auto; min-height: auto; }
+  .hero-visual { display: none; }
+  .hero-content { padding: 36px 20px; }
+  .hero-stats { gap: 16px; flex-wrap: wrap; }
+
+  /* ── trust ── */
+  .trust { padding: 14px 16px; gap: 10px; }
+  .trust-sep { display: none; }
+
+  /* ── slideshow ── */
+  .slideshow-section { padding: 40px 16px; }
+
+  /* ── services ── */
+  .services-section {
+    padding: 40px 16px !important;
+  }
+  .services-grid { grid-template-columns: 1fr; gap: 16px; }
+
+  /* ── branches ── */
+  .branches-section { padding: 40px 16px; }
+  .branches-grid { grid-template-columns: 1fr; gap: 14px; }
+  .direct-bar { flex-direction: column; align-items: flex-start; gap: 12px; padding: 20px; }
+  .direct-cta { margin-right: 0; width: 100%; text-align: center; }
+
+  /* ── why ── */
+  .why-section { padding: 40px 16px; }
+  .why-grid { grid-template-columns: 1fr; gap: 36px; }
+  .why-img-wrap img { height: 280px; }
+
+  /* ── process ── */
+  .process-section { padding: 40px 16px; }
+  .process-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+  .process-grid::before { display: none; }
+
+  /* ── testimonials ── */
+  .testi-section { padding: 40px 16px; }
+  .testi-grid { grid-template-columns: 1fr; }
+
+  /* ── cta ── */
+  .cta-section { padding: 48px 16px; grid-template-columns: 1fr; gap: 28px; }
+  .cta-right { align-items: flex-start; }
+  .cta-phone-num { font-size: 1.6rem; }
+
+  /* ── footer ── */
+  footer { padding: 40px 16px 24px; }
+  .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+  .footer-bottom { flex-direction: column; gap: 6px; text-align: center; }
+
+  /* ── floating ── */
+  .float-call { padding: 9px 14px; font-size: .75rem; }
+  .float-btn { width: 40px; height: 40px; }
+  .float-socials { grid-template-columns: repeat(5, 1fr); }
+}
+
+/* ==============================
+   SMALL MOBILE  (max 480px)
+   ============================== */
+@media (max-width: 480px) {
+  .hero-h1 { font-size: 1.8rem; }
+  .hero-sub { font-size: .88rem; }
+  .hero-actions { flex-direction: column; }
+  .hero-actions .btn-primary,
+  .hero-actions .btn-outline { width: 100%; justify-content: center; }
+
+  .hero-stats { gap: 12px; }
+  .stat-num { font-size: 1.3rem; }
+
+  .process-grid { grid-template-columns: 1fr; }
+
+  .branches-grid { grid-template-columns: 1fr; }
+
+  .sec-title { font-size: 1.4rem; }
+
+  .cta-btns { flex-direction: column; width: 100%; }
+  .btn-cta, .btn-cta-o { width: 100%; }
+
+  .float-wrap { left: 10px; bottom: 10px; }
+  .float-socials { grid-template-columns: repeat(5, 36px); gap: 6px; }
+  .float-btn { width: 36px; height: 36px; }
+  .float-btn svg { width: 18px; height: 18px; }
 }
