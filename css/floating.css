@@ -1,0 +1,36 @@
+.float-wrap{
+  position:fixed;left:20px;bottom:20px;z-index:500;
+  display:flex;flex-direction:column;gap:10px;align-items:flex-start;
+}
+.float-call{
+  background:var(--blue);color:#fff;
+  display:inline-flex;align-items:center;gap:10px;
+  padding:11px 18px;border-radius:40px;
+  font-size:.82rem;font-weight:700;text-decoration:none;
+  box-shadow:var(--shadow-lg);font-family:'Vazirmatn',sans-serif;
+  transition:transform .2s;direction:ltr;
+}
+.float-call:hover{transform:translateY(-2px)}
+.float-dot{
+  width:8px;height:8px;background:#4ade80;border-radius:50%;
+  animation:blink 1.2s infinite;flex-shrink:0;
+}
+.float-socials{
+  display:grid;grid-template-columns:repeat(5,1fr);gap:8px;
+}
+.float-btn{
+  width:44px;height:44px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  text-decoration:none;
+  box-shadow:0 2px 8px rgba(0,0,0,.15);
+  transition:transform .2s;
+  font-size:1.2rem;
+}
+.float-btn:hover{transform:scale(1.12)}
+.float-btn.tg{background:#229ED9}
+.float-btn.wa{background:#198d43}
+.float-btn.rb{background:#E8251A}
+.float-btn.ei{background:#f3bb01}
+.float-btn.bl{background:#2b89e7}
+.float-btn svg{width:22px;height:22px;fill:#fff}
+.float-btn.ei svg{fill:#333}

@@ -1,0 +1,33 @@
+nav{
+  background:#fff;border-bottom:2px solid var(--border);
+  padding:0 48px;
+  display:flex;align-items:center;justify-content:space-between;
+  position:sticky;top:0;z-index:300;
+  box-shadow:0 2px 14px rgba(26,74,138,.08);
+}
+.nav-logo{
+  font-size:1.55rem;font-weight:900;color:var(--blue);
+  text-decoration:none;padding:16px 0;letter-spacing:-1px;
+}
+.nav-logo span{color:var(--gold)}
+.nav-links{display:flex;list-style:none}
+.nav-links li a{
+  display:block;padding:20px 16px;
+  color:var(--text-mid);text-decoration:none;
+  font-size:.86rem;font-weight:600;
+  border-bottom:3px solid transparent;
+  transition:color .2s,border-color .2s;
+}
+.nav-links li a:hover{color:var(--blue);border-color:var(--blue)}
+.nav-phone{
+  display:flex;align-items:center;gap:10px;
+  color:var(--blue);text-decoration:none;
+  font-weight:900;font-size:1rem;letter-spacing:.5px;
+  direction:ltr;
+  background:var(--bg3);
+  padding:9px 20px;border-radius:var(--r);
+  border:2px solid var(--blue);
+  transition:all .2s;
+}
+.nav-phone:hover{background:var(--blue);color:#fff}
+.nav-phone svg{width:16px;height:16px;flex-shrink:0;fill:currentColor}

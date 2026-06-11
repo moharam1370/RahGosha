@@ -1,0 +1,20 @@
+:root {
+  --blue:        #1a4a8a;
+  --blue-dark:   #0f2f5c;
+  --blue-mid:    #2563c4;
+  --gold:        #f59e0b;
+  --gold-dark:   #d97706;
+  --bg:          #ffffff;
+  --bg2:         #f4f6f9;
+  --bg3:         #eaf0f9;
+  --text:        #1a2332;
+  --text-mid:    #4a5568;
+  --text-light:  #718096;
+  --border:      #dde3ed;
+  --shadow:      0 4px 24px rgba(26,74,138,.10);
+  --shadow-lg:   0 12px 48px rgba(26,74,138,.18);
+  --r:           6px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Vazirmatn',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;overflow-x:hidden}

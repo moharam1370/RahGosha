@@ -1,0 +1,28 @@
+.why-section{padding:60px 48px;background:var(--bg2)}
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.why-img-wrap{position:relative;border-radius:var(--r);overflow:hidden}
+.why-img-wrap img{width:100%;height:420px;object-fit:cover;display:block;border-radius:var(--r)}
+.why-badge{
+  position:absolute;bottom:-16px;right:-16px;
+  background:var(--blue);color:#fff;
+  padding:20px;border-radius:var(--r);
+  text-align:center;box-shadow:var(--shadow-lg);
+}
+.why-badge-num{font-size:2rem;font-weight:900;color:var(--gold);line-height:1}
+.why-badge-label{font-size:.68rem;margin-top:3px;opacity:.8}
+.why-points{display:flex;flex-direction:column;gap:16px;margin-top:28px}
+.why-point{
+  display:flex;gap:16px;align-items:flex-start;
+  padding:20px;background:#fff;
+  border:1px solid var(--border);border-radius:var(--r);
+  transition:border-color .2s,box-shadow .2s;
+}
+.why-point:hover{border-color:var(--blue);box-shadow:var(--shadow)}
+.why-icon{
+  width:44px;height:44px;min-width:44px;
+  background:var(--bg3);border-radius:var(--r);
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.2rem;
+}
+.why-pt-title{font-size:.92rem;font-weight:800;margin-bottom:4px}
+.why-pt-text{font-size:.8rem;color:var(--text-mid);line-height:1.75}
